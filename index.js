@@ -75,15 +75,15 @@ function choices(){
     };
  choices();
     
-const viewAllEmployees = () => {
-    const query = db.query("SELECT * FROM employess", function (err, res) {
-        if (err) throw err
-        console.log("\n Employees in database \n");
-        console.table(res);
-       choices();
-    });
+// const viewAllEmployees = () => {
+//     const query = db.query("SELECT * FROM employess", function (err, res) {
+//         if (err) throw err
+//         console.log("\n Employees in database \n");
+//         console.table(res);
+//        choices();
+//     });
    
-}
+// }
 
 const viewAllDepartments = () => {
     const query = db.query("SELECT * FROM departments", function (err, res) {
